@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #d0d0d0;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    background-image: url('path/to/subtle-pattern.png');
+    background-repeat: repeat;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2a2a2a;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.navdiv {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar ul li a::after {
+    background-color: #7f7f7f;
+}
+
+.navbar button {
+    background-color: #505050;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.navbar button:hover {
+    background-color: #707070;
+}
+
+.navbar button a {
+    color: #e0e0e0;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: #e0e0e0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1::after {
+    background-color: #707070;
+}
+
+.main-content img {
+    border: 3px solid #505050;
+}
+
+.main-content p {
+    color: #b0b0b0;
+}
+
+/* Footer */
+.footer {
+    background-color: #2a2a2a;
+    color: #b0b0b0;
+    background-image: url('path/to/footer-pattern.png');
+}
+
+.footer-section h3 {
+    color: #e0e0e0;
+}
+
+.footer-section a {
+    color: #b0b0b0;
+}
+
+.footer-section a:hover {
+    color: #e0e0e0;
+}
+
+.footer hr {
+    background-color: #505050;
+}
+
+.footer-bottom {
+    color: #909090;
+}
+
+/* Image Gallery */
+.img-gallery img {
+    border: 2px solid #505050;
+}
+
+/* Light Color Accent */
+.accent-color {
+    color: #a0d6b4; /* A light mint green color for accent */
+}
+
+.accent-bg {
+    background-color: #a0d6b4;
+    color: #1a1a1a;
+}
+/* Image Gallery */
+.img-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.img-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #505050;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.img-gallery img:hover {
+    transform: scale(1.1);
+}
